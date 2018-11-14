@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+
+  .row-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+header {
+  width: 100%;
+  float: left;
+}
+
+main {
+  float: left;
+  width: 65.33333%;
+  margin-right: 2%;
+}
+
+aside {
+  float: left;
+  width: 32.66667%;
+}
+
+footer {
+  float: left;
+  width: 100%;
+}
+
+.primary-gradient {
+  background: $primary-gradient;
+}
+
+.primary-background {
+  background: $primary-color;
+}
+
+.padding-vertical-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.right {
+  float: right;
+}
+
+.z-index-10 {
+  z-index: 10;
+}

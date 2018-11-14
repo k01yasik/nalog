@@ -1,0 +1,256 @@
+.site-top {
+  line-height: 3em;
+  padding-right: 1.5em;
+  border-radius: 1.5em;
+  background: white;
+  float: left;
+  width: 100%;
+}
+
+.logo-link {
+  float: left;
+}
+
+.logo-image {
+  vertical-align: middle;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  float: left;
+}
+
+.site-name {
+  color: $primary-color;
+  text-transform: uppercase;
+  float: left;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+nav ul {
+  list-style: none;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  float: left;
+  margin-right: 1.5em;
+}
+
+nav .first-level {
+  float: left;
+  margin: 0;
+  position: relative;
+}
+
+.registration {
+  line-height: 2em;
+  margin: .5em 0;
+  background: $primary-color;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.login {
+  line-height: 2em;
+  margin: .5em 0;
+  background: $secondary-color;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+}
+
+.social-item {
+  float: left;
+  line-height: 2em;
+  width: 2em;
+  margin: .5em 0;
+  background: $primary-color;
+  border-radius: 3px;
+  margin-right: .5em;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.vk-svg {
+  float: left;
+}
+
+.facebook-svg {
+  float: left;
+}
+
+.twitter-svg, .vk-svg, .facebook-svg {
+  float: left;
+  height: 1em;
+  width: 1em;
+  margin: .5em;
+  fill: white;
+}
+
+.social-item:hover {
+  background: $secondary-color;
+}
+
+.vk-svg {
+  border-radius: 3px;
+}
+
+.nav-item-svg {
+  height: .5em;
+  width: .5em;
+  float: left;
+  margin: 1.25em 0;
+}
+
+.caret-svg {
+  height: .5em;
+  width: .5em;
+  float: left;
+  fill: $primary-color;
+  transform: rotate(180deg);
+  transition: $primary-transition;
+}
+
+.nav-item-name {
+  float: left;
+  margin-right: .5em;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: -5em 0 0 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 3em;
+  padding: 1em;
+  background: $font-color;
+  width: 15em;
+  color: white;
+  border-radius: 0 0 3px 3px;
+  z-index: 10;
+
+  li {
+    line-height: 2;
+    transition: $primary-transition;
+    margin-bottom: .5em;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.first-level:hover {
+  .sub-menu {
+    display: block;
+  }
+
+  .nav-link {
+    color: $secondary-color;
+  }
+
+  .caret-svg {
+    fill: $secondary-color;
+  }
+}
+
+.nav-link{
+  display: block;
+  padding: 0 1em;
+  text-decoration: none;
+  color: $primary-color;
+  transition: $primary-transition;
+  float: left;
+}
+
+.simple-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+.search-input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  height: 3em;
+  outline: none;
+  float: left;
+}
+
+.search-row {
+  margin-top: -6em;
+  z-index: 10;
+}
+
+.search-bar {
+  height: 3em;
+  border-radius: 1.5em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search-bar-title {
+  float: left;
+  margin-right: 1em;
+}
+
+.search-bar-form {
+  float: left;
+  width: 80%;
+  line-height: 3em;
+  background: white;
+  border-radius: 1.5em 0 0 1.5em;
+  padding: 0 1.5em;
+}
+
+.search-bar-button {
+  float: left;
+  width: 20%;
+  line-height: 3em;
+  background: #377abf;
+  color: white;
+  border-radius: 0 1.5em 1.5em 0;
+  text-align: center;
+  cursor: pointer;
+}

@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'PageController@home')->name('pages.home');
+
+Route::get('/posts', 'PostController@index')->name('post.index');
+
+Route::get('/news', 'NewsController@index')->name('news.index');
+
+Route::get('/soft', 'SoftController@index')->name('soft.index');
+
+Route::group(['middleware' => ['auth', 'verified']], function() {
+    Route::post('/answers', 'AnswerController@store')->name('answers.store');
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

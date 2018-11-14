@@ -1,20 +1,23 @@
+$font-name: 'Roboto', sans-serif;
 
-// Body
-$body-bg: #f8fafc;
+//font colors
+$font-color: #3a3a3a;
 
-// Typography
-$font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+//font sizes
+$font-size: 16px;
+$line-height: 1.5;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66D9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+//site colors
+
+$primary-color: #377abf;
+$primary-color-2: #68a2df;
+$primary-color-3: #88b2df;
+$secondary-color: #ffb03a;
+
+//gradients
+
+$primary-gradient: linear-gradient(to bottom, $primary-color-2 0%,$primary-color-3 100%);
+
+//transitions
+
+$primary-transition: all .5s ease-in-out;
